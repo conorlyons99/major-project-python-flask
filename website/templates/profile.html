@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<header>
+    <div class="container-fluid text-center content"> 
+       <p class="display-3 siteText mt-5 mb-3">Welcome to your Dashboard {{user.firstName}}</p>
+       <p class="lead pb-4 siteText">Your Email is {{user.email}}.</p>
+        <p>Here are your favourite songs:</p>
+    </div>
+</header>
+{% endblock content %}

@@ -1,0 +1,8 @@
+{% extends "resultsBase.html" %} {% block title %}Index{% endblock %}
+{% block content %}
+<div class="container-fluid text-center content">
+    <img src="../static/img/error.gif" alt="Error Icon">
+    <h3>We couldn't seem to find that in our database. Make sure you typed the name correctly and then try again</h3>
+    <p><a href="/recommender" class="btn btn-danger btn-lg mt-5" role="button">Return</a></p>
+</div>
+{% endblock content %}
