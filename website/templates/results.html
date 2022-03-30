@@ -1,113 +1,135 @@
-{% extends "resultsBase.html" %} {% block title %}Index{% endblock %}
-{% block content %}
+{% extends "resultsBase.html" %} {% block title %}Index{% endblock %} {% block
+content %}
 <div class="results">
-    <h2><u>Recommendations:</u></h2>
-    <p>Showing results for: {{ search_name }}</p>
-    <div class="row">
-        <div class="card-group">
-        <div class="card mb-5 p-2" style="width: 18rem;">
+  <h2><u>Recommendations:</u></h2>
+  <p>Showing results for: {{ search_name }}</p>
+  <div class="row">
+    <div class="card-group">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[0] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[0] }}</h6>
-          <p class="card-text">{{ movie_tagline[0]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[0] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[0]}}</p>
+          <h5>{{ movie_voterAvg[0] }}/10</h5>
           <a href="{{ movie_homepage[0] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[1] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[1] }}</h6>
-          <p class="card-text">{{ movie_tagline[1]}}.</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[1] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[1]}}.</p>
+          <h5>{{ movie_voterAvg[1] }}/10</h5>
           <a href="{{ movie_homepage[1] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[2] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[2] }}</h6>
-          <p class="card-text">{{ movie_tagline[2]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[2] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[2]}}</p>
+          <h5>{{ movie_voterAvg[2] }}/10</h5>
           <a href="{{ movie_homepage[2] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
     </div>
-    </div>
-    <div class="row">
+  </div>
+  <div class="row">
     <div class="card-group">
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[3] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[3] }}</h6>
-          <p class="card-text">{{ movie_tagline[3]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[3] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[3]}}</p>
+          <h5>{{ movie_voterAvg[3] }}/10</h5>
           <a href="{{ movie_homepage[3] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[4] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[4] }}</h6>
-          <p class="card-text">{{ movie_tagline[4]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[4] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[4]}}</p>
+          <h5>{{ movie_voterAvg[4] }}/10</h5>
           <a href="{{ movie_homepage[4] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[5] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[5] }}</h6>
-          <p class="card-text">{{ movie_tagline[5]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[5] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[5]}}</p>
+          <h5>{{ movie_voterAvg[5] }}/10</h5>
           <a href="{{ movie_homepage[5] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="card-group">
-      <div class="card mb-5 p-2" style="width: 18rem;">
+  </div>
+  <div class="row">
+    <div class="card-group">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[6] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[6] }}</h6>
-          <p class="card-text">{{ movie_tagline[6]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[6] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[6]}}</p>
+          <h5>{{ movie_voterAvg[6] }}/10</h5>
           <a href="{{ movie_homepage[6] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[7] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[7] }}</h6>
-          <p class="card-text">{{ movie_tagline[7]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[7] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[7]}}</p>
+          <h5>{{ movie_voterAvg[7] }}/10</h5>
           <a href="{{ movie_homepage[7] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
 
-      <div class="card mb-5 p-2" style="width: 18rem;">
+      <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
           <h5 class="card-title">{{ movie_names[8] }}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Released On: {{ movie_date[8] }}</h6>
-          <p class="card-text">{{ movie_tagline[8]}}</p>
+          <h6 class="card-subtitle mb-2 text-muted">
+            Released On: {{ movie_date[8] }}
+          </h6>
+          <p class="card-text">{{ movie_overview[8]}}</p>
+          <h5>{{ movie_voterAvg[8] }}/10</h5>
           <a href="{{ movie_homepage[8] }}" class="card-link">More Info!</a>
           <a href="#" class="card-link">Favourite It!</a>
         </div>
       </div>
     </div>
-    </div>
-    <!-- <table align="center">
+  </div>
+  <!-- <table align="center">
         <tr>
             <th>Movie Title</th>
             <th>Release Date</th>
@@ -166,10 +188,14 @@
             </tr>
         </tbody>
     </table> -->
-    <div>
-    <p><a href="/recommender" class="btn btn-danger btn-lg mt-5" role="button">Back</a></p>
-    </div>
-    <br>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <div>
+    <p>
+      <a href="/recommender" class="btn btn-danger btn-lg mt-5" role="button"
+        >Back</a
+      >
+    </p>
+  </div>
+  <br />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </div>
 {% endblock %}
