@@ -3,6 +3,9 @@ body {
   background-color: #212121;
   color: white;
 }
+h5 {
+  color: yellow;
+}
 .card {
   background-color: #212121;
   color: white;
@@ -83,22 +86,16 @@ input[type="reset"]:active {
 input[type="text"] {
   background-color: #f6f6f6;
   border: none;
-  color: #0d0d0d;
+  color: white;
   padding: 15px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  margin: 5px;
-  width: 80%;
-  border: 2px solid #f6f6f6;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  font-size: 13px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
 }
 
 input[type="text"]:focus {
