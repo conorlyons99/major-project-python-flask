@@ -3,12 +3,26 @@ body {
   background-color: #212121;
   color: white;
 }
+.background-image {
+  background-image: url(../img/image4.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h5 {
   color: yellow;
 }
 .card {
   background-color: #212121;
   color: white;
+}
+.card-text {
+  text-align: justify;
 }
 .btn-primary {
   background-color: #c60063;
@@ -83,11 +97,13 @@ input[type="reset"]:active {
   transform: scale(0.95);
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
   background-color: #f6f6f6;
   border: none;
   color: white;
-  padding: 15px 80px;
+  padding: 10px 80px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -95,14 +111,7 @@ input[type="text"] {
   font-size: 13px;
   -webkit-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
-  margin: 5px 20px 40px 20px;
 }
-
-input[type="text"]:focus {
-  background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
-}
-
 input[type="text"]:placeholder {
   color: #cccccc;
 }
@@ -226,8 +235,8 @@ input[type="text"]:placeholder {
   width: 100%;
 }
 .movie {
-  height: 30vh;
-  margin-top: 15vh;
+  height: 20vh;
+  margin-top: 25vh;
   margin-bottom: 15vh;
   margin-right: 5vh;
   margin-left: 5vh;
