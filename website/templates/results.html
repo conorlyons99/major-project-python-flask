@@ -1,5 +1,6 @@
 {% extends "resultsBase.html" %} {% block title %}Index{% endblock %} {% block
 content %}
+
 <div class="results">
   <h2><u>Recommendations:</u></h2>
   <p>Showing results for: {{ search_name }}</p>
@@ -7,6 +8,13 @@ content %}
     <div class="card-group">
       <div class="card mb-5 p-2" style="width: 18rem">
         <div class="card-body">
+          <img
+            id="searchedImage"
+            name="searchedImage"
+            alt=""
+            width="285"
+            height="437"
+          />
           <h4 class="card-title">{{ movie_names[0] }}</h4>
           <h6 class="card-subtitle mb-2 text-muted">
             Released On: {{ movie_date[0] }}
@@ -14,7 +22,7 @@ content %}
           <p class="card-text">{{ movie_overview[0]}}</p>
           <h5>{{ movie_voterAvg[0] }}/10</h5>
           <a href="{{ movie_homepage[0] }}" class="card-link">More Info!</a>
-          <a href="#" class="card-link">Favourite It!</a>
+          <a href="javascript:addfav()">Add To Favorites</a>
         </div>
       </div>
 
@@ -197,5 +205,6 @@ content %}
   </div>
   <br />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="../static/js/script.js"></script>
 </div>
 {% endblock %}

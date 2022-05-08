@@ -23,7 +23,23 @@
       rel="stylesheet"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>{% block title %}Home{% endblock %}</title>
+    <script>
+      $.ajax({
+        type: "GET",
+        url: query,
+        success: function (recs) {
+          var a = JSON.stringify(recs);
+          //alert(a);
+          var rslt = JSON.parse(a);
+          var pp = rslt.results[0].poster_path;
+          document.getElementById("searchedImage").src =
+            "https://image.tmdb.org/t/p/w500" + pp;
+        },
+      });
+    </script>
   </head>
   <body>
     {% with messages = get_flashed_messages(with_categories=true) %} {% if
